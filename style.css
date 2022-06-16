@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css");
+    *{
+        box-sizing: border-box;
+        padding: 0%;
+        margin: 0%;
+        font-family: 'Poppins', sans-serif;
+    }
+    body{
+        background-color: #457b9d;
+
+    }
+
+
+
+.container{
+    border-radius: 8px;
+    background-color: white;
+    width: 400px;
+    height: 5   00px;
+    margin: auto;
+    margin-top: 5%;
+    /* padding: 10px; */
+    /* display: flex; */
+}
+.heading{
+    border-bottom: 1px solid rgb(182, 180, 180);
+}
+.heading h3{
+    padding: 10px;
+    font-size: 25px;
+    font-weight: 500;
+    color: #42a5f5;
+}
+.arrow{
+    color: #48cae4;
+    font-size: 25px;
+}
+.img img{
+    /* background-color: blue; */
+    width: 150px;
+    height: 150px;
+    
+}
+.img{
+    width: 200px;
+    height: 200px;
+    
+    margin: auto;
+    padding: 30px;
+}
+
+.temp h1{
+    margin: auto;
+    font-size: 50px;
+    text-align: center;
+    font-weight: 400;
+}
+.des p{
+    margin: auto;
+    font-size: 20px;
+    text-align: center;
+    padding: 7px;
+}
+
+.flex-box{
+    display: flex;
+    width: 100%;
+    height: 5rem;
+    border-top: 1px solid rgb(147, 142, 142);
+    
+}
+
+
+.feel{
+    /* background-color: chartreuse; */
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    border-right: 1px solid rgb(147, 142, 142);
+
+}
+
+.humidity{
+    /* background-color: cornflowerblue; */
+    width: 50% ;
+    display: flex;
+    justify-content: center;
+}
+
+.temp-logo{
+    /* background-color: red; */
+    line-height: 5rem;  
+    font-size: 25px;
+    color: #64b5f6;
+}
+.feel-temp{
+    padding: 10px;
+}
