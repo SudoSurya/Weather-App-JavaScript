@@ -1,4 +1,5 @@
 const input = document.getElementById("input");
+const input1 = document.getElementById("input1");
 const container = document.querySelector(".container");
 const id  = document.querySelector("img");
 console.log(container);
@@ -7,6 +8,21 @@ input.addEventListener("keyup", e=>{
         reqApi((input.value).toLowerCase())
     }
 });
+
+function errorRender(){
+    const res = `
+    <div class="heading">
+            <h3>  <span class="arrow"><i class="bi bi-brightness-high"></i></span> Weather App </h3>
+        </div>
+        <div class="warn">
+            <p class="warn-heading">${input.value} isn't a valid city name</p>
+        </div>
+        <div class="error-icon">
+            <img src="./error.png" class="error-img" alt="" srcset="">
+        </div>
+    `
+    container.innerHTML = res;
+}
 
 
 function reqApi(city){
@@ -18,7 +34,7 @@ function reqApi(city){
            ApiData(data);  
         })
         .catch((err)=>{
-            console.log(err);
+            errorRender()
         })
 }
   
@@ -55,7 +71,7 @@ function ApiData(details){
 
     const render = `
             <div class="heading">
-            <h3>  <span class="arrow"><i class="bi bi-arrow-left-circle"></i></span> Weather App </h3>
+            <h3>  <span class="arrow"><i class="bi bi-brightness-high"></i></span> Weather App </h3>
         </div>
         <div class="img">
              <img src=${id} alt="" srcset="">
