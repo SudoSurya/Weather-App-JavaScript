@@ -108,3 +108,7 @@ function ApiData(details) {
 
   container.innerHTML = render;
 }
+
+function whocares() {
+  console.log(8);
+}
